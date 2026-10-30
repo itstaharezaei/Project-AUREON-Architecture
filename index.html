@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fa" dir="rtl" data-theme="light" data-lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#F2F0E9" />
+    <meta
+      name="description"
+      content="AUREON Architecture — استودیوی معماری، طراحی داخلی و فضاهای معاصر. فراتر از ساختن، خلق یک تجربه."
+    />
+    <title>AUREON Architecture — فراتر از ساختن، خلق یک تجربه</title>
+
+    <link rel="preload" href="/fonts/vazirmatn-arabic.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+
+    <script>
+      ;(function () {
+        try {
+          var root = document.documentElement
+          var lang = localStorage.getItem('aureon:lang')
+          if (lang !== 'fa' && lang !== 'en') lang = 'fa'
+          var theme = localStorage.getItem('aureon:theme')
+          if (theme !== 'light' && theme !== 'dark') {
+            theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+          }
+          root.lang = lang
+          root.dir = lang === 'fa' ? 'rtl' : 'ltr'
+          root.dataset.lang = lang
+          root.dataset.theme = theme
+          root.style.colorScheme = theme
+        } catch (error) {
+          /* storage unavailable — fall back to the markup defaults */
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

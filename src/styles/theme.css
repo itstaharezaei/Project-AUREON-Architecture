@@ -1,0 +1,53 @@
+/* Design tokens — the single source of truth for both themes. */
+
+:root {
+  color-scheme: light;
+
+  --bg: #f2f0e9;
+  --bg-alt: #e9e6dc;
+  --surface: #ffffff;
+  --ink: #191a18;
+  --muted: #77766f;
+  --accent: #b65e3c;
+  --accent-ink: #fdf6f2;
+  --accent-soft: rgb(182 94 60 / 0.12);
+  --line: #dedcd3;
+  --line-strong: #c9c6ba;
+
+  --glass: rgb(242 240 233 / 0.72);
+  --glass-line: rgb(25 26 24 / 0.08);
+  --scrim: rgb(25 26 24 / 0.42);
+  --shadow-soft: 0 30px 70px -40px rgb(25 26 24 / 0.45);
+
+  --mesh-a: rgb(182 94 60 / 0.2);
+  --mesh-b: rgb(119 118 111 / 0.18);
+  --mesh-c: rgb(255 255 255 / 0.75);
+
+  --hero-veil: linear-gradient(to top, rgb(17 18 16 / 0.78), rgb(17 18 16 / 0.18) 55%, rgb(17 18 16 / 0.35));
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  --bg: #111210;
+  --bg-alt: #171815;
+  --surface: #1b1c19;
+  --ink: #f2f0e9;
+  --muted: #a7a69f;
+  --accent: #d28b65;
+  --accent-ink: #1a120c;
+  --accent-soft: rgb(210 139 101 / 0.16);
+  --line: #34352f;
+  --line-strong: #4a4b43;
+
+  --glass: rgb(17 18 16 / 0.68);
+  --glass-line: rgb(242 240 233 / 0.1);
+  --scrim: rgb(0 0 0 / 0.6);
+  --shadow-soft: 0 30px 70px -40px rgb(0 0 0 / 0.9);
+
+  --mesh-a: rgb(210 139 101 / 0.18);
+  --mesh-b: rgb(167 166 159 / 0.12);
+  --mesh-c: rgb(27 28 25 / 0.8);
+
+  --hero-veil: linear-gradient(to top, rgb(9 10 8 / 0.88), rgb(9 10 8 / 0.3) 55%, rgb(9 10 8 / 0.5));
+}
